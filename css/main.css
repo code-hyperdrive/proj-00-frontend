@@ -15,7 +15,7 @@
   --surface:     #FFFFFF;
   --text-primary: #1A1918;     /* warm near-black */
   --text-secondary: #5A5855;   /* warm mid-gray */
-  --text-muted:  #8A8884;      /* light gray labels */
+  --text-muted:  #6E6C68;      /* light gray labels — darkened for WCAG AA contrast on --bg */
   --accent:      #1D4E7A;      /* deep slate blue — authority, calm */
   --accent-hover: #163A5A;
   --accent-light: #EAF1F8;
@@ -1042,7 +1042,7 @@ em { font-style: italic; }
 }
 
 .form-select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A8884' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236E6C68' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 0.9rem center;
   padding-right: 2.2rem;
@@ -1211,6 +1211,25 @@ em { font-style: italic; }
 }
 
 /* --- Responsive --- */
+
+/* Nav collapses to the hamburger below this width. Breakpoint is wider than
+   the content breakpoints below because 9 nav items stop fitting the header
+   well before the two-column layouts need to stack. */
+@media (max-width: 1140px) {
+  .nav-links { display: none; flex-direction: column; gap: var(--space-md); }
+  .nav-links.open { display: flex; }
+  .nav-inner { flex-wrap: wrap; height: auto; padding-top: 0.75rem; padding-bottom: 0.75rem; }
+  .nav-toggle { display: flex; }
+
+  /* Mobile nav open state */
+  .nav-inner.open .nav-links {
+    display: flex;
+    width: 100%;
+    padding: var(--space-md) 0 var(--space-sm);
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+}
+
 @media (max-width: 900px) {
   :root { --space-2xl: 4rem; }
 
@@ -1257,19 +1276,6 @@ em { font-style: italic; }
 
 @media (max-width: 640px) {
   :root { --space-2xl: 3rem; }
-
-  .nav-links { display: none; flex-direction: column; gap: var(--space-md); }
-  .nav-links.open { display: flex; }
-  .nav-inner { flex-wrap: wrap; height: auto; padding-top: 0.75rem; padding-bottom: 0.75rem; }
-  .nav-toggle { display: flex; }
-
-  /* Mobile nav open state */
-  .nav-inner.open .nav-links {
-    display: flex;
-    width: 100%;
-    padding: var(--space-md) 0 var(--space-sm);
-    border-top: 1px solid rgba(255,255,255,0.08);
-  }
 
   .case-grid { grid-template-columns: 1fr; }
   .innovation-item { grid-template-columns: 1fr; gap: var(--space-sm); }
