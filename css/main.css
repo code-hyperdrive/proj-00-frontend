@@ -240,6 +240,53 @@ em { font-style: italic; }
   margin-bottom: var(--space-xl);
 }
 
+/* --- Name pronunciation --- */
+.name-pronounce {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.pronounce-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0;
+  transition: border-color var(--transition), color var(--transition), background var(--transition), transform var(--transition);
+}
+
+.pronounce-btn:hover {
+  border-color: var(--accent);
+  transform: scale(1.08);
+}
+
+.pronounce-btn:active { transform: scale(0.95); }
+
+.pronounce-btn.is-speaking {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.pronunciation-guide {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
 .hero-ctas {
   display: flex;
   flex-wrap: wrap;

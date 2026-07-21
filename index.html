@@ -160,7 +160,24 @@
             </h1>
 
             <p class="hero-summary">
-              I'm Ram Sharan Singh, also known as Ramsharan. I've spent 18 years at the intersection of AI, privacy, and human-centered
+              I'm
+              <span class="name-pronounce">
+                Ram Sharan Singh
+                <button type="button" class="pronounce-btn" data-say="Ram Sharan Singh" aria-label="Hear how to pronounce Ram Sharan Singh">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                  </svg>
+                </button>
+                <span class="pronunciation-guide">(RAHM shuh-RAHN sing)</span></span>,
+              also known as Ramsharan. I've spent 18 years at the intersection of AI, privacy, and human-centered
+              software — building products that protect people's data, aid clinical diagnosis,
+              and help organizations understand their markets. My work is defined less by
+              what I've shipped and more by how I've shaped the teams, decisions, and systems
+              that made shipping possible.
+            </p>
+
             <div class="hero-ctas">
               <a href="how-i-work.html" class="btn btn-primary">How I Work</a>
               <a href="experience.html" class="btn btn-secondary">Selected Experience</a>
@@ -356,6 +373,37 @@
   </footer>
 
   <script src="js/nav.js"></script>
+
+  <!-- ============================================================
+       Name pronunciation — uses the browser's built-in text-to-speech
+       (Web Speech API), no audio file or backend needed.
+       ============================================================ -->
+  <script>
+    (function () {
+      var btn = document.querySelector('.pronounce-btn');
+      if (!btn) return;
+
+      if (!('speechSynthesis' in window)) {
+        btn.style.display = 'none';
+        return;
+      }
+
+      btn.addEventListener('click', function () {
+        var text = btn.getAttribute('data-say') || '';
+        window.speechSynthesis.cancel();
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 0.9;
+        utterance.lang = 'en-IN';
+
+        btn.classList.add('is-speaking');
+        utterance.onend = function () { btn.classList.remove('is-speaking'); };
+        utterance.onerror = function () { btn.classList.remove('is-speaking'); };
+
+        window.speechSynthesis.speak(utterance);
+      });
+    })();
+  </script>
 </body>
 </html>
 
