@@ -975,6 +975,13 @@ em { font-style: italic; }
 }
 
 /* --- Contact --- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
 .contact-body {
   max-width: 580px;
 }
