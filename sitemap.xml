@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://ramsharans.com/</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/photo.png</image:loc>
+      <image:title>Ram Sharan Singh — Senior Engineering Leader</image:title>
+      <image:caption>Portrait of Ram Sharan Singh, senior engineering leader in AI and privacy at SurveyMonkey</image:caption>
+    </image:image>
   </url>
 
   <url>
@@ -62,6 +68,36 @@
     <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-01.jpg</image:loc>
+      <image:title>Ram Sharan Singh presenting in a corporate meeting room</image:title>
+      <image:caption>Ram Sharan Singh giving a product briefing in a formal meeting space</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-02.jpg</image:loc>
+      <image:title>Ram Sharan Singh in a team discussion</image:title>
+      <image:caption>Ram Sharan Singh in a focused conversation with the team around next steps</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-03.jpg</image:loc>
+      <image:title>Ram Sharan Singh — professional portrait</image:title>
+      <image:caption>Ram Sharan Singh, senior engineering leader, in a workplace meeting room</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-04.jpg</image:loc>
+      <image:title>Ram Sharan Singh in conversation with colleagues</image:title>
+      <image:caption>Ram Sharan Singh in a business discussion that captures collaboration and context</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-05.jpg</image:loc>
+      <image:title>Ram Sharan Singh leading a workshop session</image:title>
+      <image:caption>Ram Sharan Singh in a work session with a leadership team around planning and product decisions</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-06.jpg</image:loc>
+      <image:title>Ram Sharan Singh in a team meeting</image:title>
+      <image:caption>Ram Sharan Singh in a planning session with the team in a shared workspace</image:caption>
+    </image:image>
   </url>
 
   <url>

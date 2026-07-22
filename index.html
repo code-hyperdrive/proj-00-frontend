@@ -25,59 +25,104 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://ramsharans.com/" />
 
-  <!-- JSON-LD: Person schema -->
+  <!-- JSON-LD: ProfilePage wrapping Person schema — Google's recommended
+       structured data for personal name-search visibility -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ram Sharan Singh",
-    "alternateName": ["Ramsharan", "Ram Sharan"],
-    "jobTitle": "Senior Engineering Manager",
-    "description": "Engineering leader with 18 years of experience building AI-powered products in privacy, healthcare, and market research at SurveyMonkey, McAfee, Philips Healthcare, and Intel.",
-    "url": "https://ramsharans.com",
-    "image": "https://ramsharans.com/images/photo.png",
-    "sameAs": [
-      "https://www.linkedin.com/in/ramsharans",
-      "https://github.com/ramsharans"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "SurveyMonkey",
-      "url": "https://www.surveymonkey.com"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Bengaluru",
-      "addressRegion": "Karnataka",
-      "addressCountry": "IN"
-    },
-    "alumniOf": [
-      { "@type": "Organization", "name": "McAfee" },
-      { "@type": "Organization", "name": "Philips Healthcare" },
-      { "@type": "Organization", "name": "Intel" }
-    ],
-    "knowsAbout": [
-      "Engineering Leadership",
-      "Artificial Intelligence",
-      "Privacy Technology",
-      "Cloud Architecture",
-      "Healthcare Technology",
-      "Market Research Technology",
-      "Software Engineering Management",
-      "Distributed Systems"
-    ],
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Master of Computer Applications",
-        "credentialCategory": "degree"
+    "@type": "ProfilePage",
+    "dateCreated": "2025-03-31",
+    "dateModified": "2026-07-22",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Ram Sharan Singh",
+      "alternateName": ["Ramsharan", "Ram Sharan", "Ramsharan Singh", "Ram S. Singh", "Ram Sharan Singh Ramsharan"],
+      "givenName": "Ram Sharan",
+      "familyName": "Singh",
+      "jobTitle": "Senior Engineering Manager",
+      "description": "Ram Sharan Singh (Ramsharan) is a senior engineering leader with 18 years of experience building AI-powered products in privacy, healthcare, and market research at SurveyMonkey, McAfee, Philips Healthcare, and Intel.",
+      "url": "https://ramsharans.com",
+      "image": "https://ramsharans.com/images/photo.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/ramsharans",
+        "https://github.com/ramsharans"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "SurveyMonkey",
+        "url": "https://www.surveymonkey.com"
       },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "name": "The Leadership Consortium Certificate",
-        "credentialCategory": "certificate"
-      }
-    ]
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "addressCountry": "IN"
+      },
+      "alumniOf": [
+        { "@type": "Organization", "name": "McAfee", "url": "https://www.mcafee.com" },
+        { "@type": "Organization", "name": "Philips Healthcare", "url": "https://www.philips.com/healthcare" },
+        { "@type": "Organization", "name": "Intel", "url": "https://www.intel.com" }
+      ],
+      "hasOccupation": [
+        {
+          "@type": "Role",
+          "roleName": "Senior Engineering Manager",
+          "startDate": "2024",
+          "memberOf": { "@type": "Organization", "name": "SurveyMonkey", "url": "https://www.surveymonkey.com" }
+        },
+        {
+          "@type": "Role",
+          "roleName": "Engineering Manager",
+          "startDate": "2021",
+          "endDate": "2024",
+          "memberOf": { "@type": "Organization", "name": "McAfee", "url": "https://www.mcafee.com" }
+        },
+        {
+          "@type": "Role",
+          "roleName": "Engineering Lead",
+          "startDate": "2019",
+          "endDate": "2021",
+          "memberOf": { "@type": "Organization", "name": "Philips Healthcare", "url": "https://www.philips.com/healthcare" }
+        },
+        {
+          "@type": "Role",
+          "roleName": "Software Engineer to Architect to Manager",
+          "startDate": "2008",
+          "endDate": "2019",
+          "memberOf": { "@type": "Organization", "name": "Intel", "url": "https://www.intel.com" }
+        }
+      ],
+      "knowsAbout": [
+        "Engineering Leadership",
+        "Artificial Intelligence",
+        "Privacy Technology",
+        "Cloud Architecture",
+        "Healthcare Technology",
+        "Market Research Technology",
+        "Software Engineering Management",
+        "Distributed Systems"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Master of Computer Applications",
+          "credentialCategory": "degree"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "The Leadership Consortium Certificate",
+          "credentialCategory": "certificate"
+        }
+      ],
+      "award": [
+        "US Patent 12314431 B2 — Privacy Exposure Risk",
+        "US Patent Application 2022/0391927 A1 — Digital Exhaust",
+        "SurveyMonkey Global Hackathon Winner, 2024",
+        "Intel Innovative Ideas Award, 2016",
+        "Intel Innovation Challenge Winner, 2012",
+        "NAVTEQ Global LBS Challenge Winner (Asia-Pacific), 2009"
+      ]
+    }
   }
   </script>
 
@@ -93,6 +138,74 @@
       "@type": "Person",
       "name": "Ram Sharan Singh"
     }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage schema — mirrors the visible FAQ section below.
+       Keep both in sync if either changes. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is Ram Sharan Singh?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ram Sharan Singh — also known as Ramsharan or Ramsharan Singh — is a senior engineering leader based in Bengaluru, India, with 18 years of experience building AI-powered products in privacy, healthcare, and market research."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where does Ram Sharan Singh work now?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ram Sharan Singh currently leads engineering at SurveyMonkey in Bengaluru, responsible for the SM Apply, Market Research Solutions, and Wufoo product lines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What companies has Ram Sharan Singh worked for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ram Sharan Singh has worked at SurveyMonkey (2024–present), McAfee (2021–2024), Philips Healthcare (2019–2021), and Intel (2008–2019), spanning privacy technology, clinical AI, and consumer security."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Ramsharan the same person as Ram Sharan Singh?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Ramsharan and Ramsharan Singh are the same person as Ram Sharan Singh — a senior engineering leader at SurveyMonkey, previously at McAfee, Philips Healthcare, and Intel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Ram Sharan Singh known for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Two US patents in privacy technology (US 12314431 B2 and US 2022/0391927 A1), a 2024 SurveyMonkey Global Hackathon win, and eight innovation awards across 15 years at Intel and McAfee."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: ImageObject schema — ties the hero portrait to Ram Sharan Singh for Google Images -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    "contentUrl": "https://ramsharans.com/images/photo.png",
+    "url": "https://ramsharans.com/images/photo.png",
+    "name": "Ram Sharan Singh — Senior Engineering Leader",
+    "caption": "Portrait of Ram Sharan Singh, senior engineering leader in AI and privacy at SurveyMonkey",
+    "creditText": "Ram Sharan Singh",
+    "representativeOfPage": true,
+    "width": "420",
+    "height": "520",
+    "about": { "@type": "Person", "name": "Ram Sharan Singh", "url": "https://ramsharans.com" }
   }
   </script>
 
@@ -323,6 +436,78 @@
               All writing
             </a>
           </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ — mirrors the FAQPage JSON-LD in <head>. Keep both in sync;
+         Google requires structured data to match visible page content.
+         ============================================================ -->
+    <section class="section section-alt">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">FAQ</span>
+          <h2>Quick answers</h2>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:0; max-width:720px;">
+
+          <details style="padding: 1.25rem 0; border-top: 1px solid var(--border);">
+            <summary style="cursor:pointer; font-weight:600; font-family:var(--font-serif); font-size:1.05rem;">
+              Who is Ram Sharan Singh?
+            </summary>
+            <p style="margin-top:0.75rem; color:var(--text-secondary); font-size:0.95rem; line-height:1.7;">
+              Ram Sharan Singh — also known as Ramsharan or Ramsharan Singh — is a senior engineering
+              leader based in Bengaluru, India, with 18 years of experience building AI-powered products
+              in privacy, healthcare, and market research.
+            </p>
+          </details>
+
+          <details style="padding: 1.25rem 0; border-top: 1px solid var(--border);">
+            <summary style="cursor:pointer; font-weight:600; font-family:var(--font-serif); font-size:1.05rem;">
+              Where does Ram Sharan Singh work now?
+            </summary>
+            <p style="margin-top:0.75rem; color:var(--text-secondary); font-size:0.95rem; line-height:1.7;">
+              Ram Sharan Singh currently leads engineering at SurveyMonkey in Bengaluru, responsible
+              for the SM Apply, Market Research Solutions, and Wufoo product lines.
+            </p>
+          </details>
+
+          <details style="padding: 1.25rem 0; border-top: 1px solid var(--border);">
+            <summary style="cursor:pointer; font-weight:600; font-family:var(--font-serif); font-size:1.05rem;">
+              What companies has Ram Sharan Singh worked for?
+            </summary>
+            <p style="margin-top:0.75rem; color:var(--text-secondary); font-size:0.95rem; line-height:1.7;">
+              Ram Sharan Singh has worked at SurveyMonkey (2024–present), McAfee (2021–2024),
+              Philips Healthcare (2019–2021), and Intel (2008–2019), spanning privacy technology,
+              clinical AI, and consumer security.
+            </p>
+          </details>
+
+          <details style="padding: 1.25rem 0; border-top: 1px solid var(--border);">
+            <summary style="cursor:pointer; font-weight:600; font-family:var(--font-serif); font-size:1.05rem;">
+              Is Ramsharan the same person as Ram Sharan Singh?
+            </summary>
+            <p style="margin-top:0.75rem; color:var(--text-secondary); font-size:0.95rem; line-height:1.7;">
+              Yes. Ramsharan and Ramsharan Singh are the same person as Ram Sharan Singh — a senior
+              engineering leader at SurveyMonkey, previously at McAfee, Philips Healthcare, and Intel.
+            </p>
+          </details>
+
+          <details style="padding: 1.25rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <summary style="cursor:pointer; font-weight:600; font-family:var(--font-serif); font-size:1.05rem;">
+              What is Ram Sharan Singh known for?
+            </summary>
+            <p style="margin-top:0.75rem; color:var(--text-secondary); font-size:0.95rem; line-height:1.7;">
+              Two US patents in privacy technology (US 12314431 B2 and US 2022/0391927 A1), a 2024
+              SurveyMonkey Global Hackathon win, and eight innovation awards across 15 years at Intel
+              and McAfee. See the <a href="innovation.html" style="color:var(--accent); text-decoration:underline; text-underline-offset:2px;">Innovation page</a> for details.
+            </p>
+          </details>
 
         </div>
 
