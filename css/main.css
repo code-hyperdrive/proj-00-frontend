@@ -850,7 +850,7 @@ em { font-style: italic; }
 }
 
 .rec-card {
-  height: 280px;
+  min-height: 320px;
   padding: var(--space-md);
   border: 1px solid var(--border);
   border-top: 3px solid var(--accent);
@@ -874,10 +874,6 @@ em { font-style: italic; }
   line-height: 1.55;
   color: var(--text-secondary);
   font-style: italic;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .rec-person {
@@ -909,16 +905,11 @@ em { font-style: italic; }
 }
 
 .rec-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.3;
 }
 
 .rec-role {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  line-height: 1.4;
 }
 
 .rec-name {
