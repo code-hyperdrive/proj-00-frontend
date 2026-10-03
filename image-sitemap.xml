@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://ramsharans.com/images/favicon.svg</loc>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/favicon.svg</image:loc>
+      <image:title>Favicon</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ramsharans.com/images/photo.png</loc>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/photo.png</image:loc>
+      <image:title>Ram Sharan Singh portrait</image:title>
+      <image:caption>Portrait of Ram Sharan Singh, senior engineering leader in AI and privacy</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ramsharans.com/images/gallery/gallery-01.jpg</loc>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-01.jpg</image:loc>
+      <image:title>Mid-slide, mid-thought</image:title>
+      <image:caption>Pretty sure I lost my train of thought right after this</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ramsharans.com/images/gallery/gallery-02.jpg</loc>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-02.jpg</image:loc>
+      <image:title>A five-minute chat that wasn't</image:title>
+      <image:caption>Started as a quick sync, ended up solving world peace</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ramsharans.com/images/gallery/gallery-03.jpg</loc>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-03.jpg</image:loc>
+      <image:title>Caught off guard</image:title>
+      <image:caption>No idea a camera was even out for this one</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ramsharans.com/images/gallery/gallery-04.jpg</loc>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-04.jpg</image:loc>
+      <image:title>Off the clock</image:title>
+      <image:caption>Team outing, no agenda in sight</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ramsharans.com/images/gallery/gallery-05.jpg</loc>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-05.jpg</image:loc>
+      <image:title>Marker in hand, plan half-baked</image:title>
+      <image:caption>Ninety percent confidence, ten percent guessing</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ramsharans.com/images/gallery/gallery-06.jpg</loc>
+    <image:image>
+      <image:loc>https://ramsharans.com/images/gallery/gallery-06.jpg</image:loc>
+      <image:title>That's a wrap</image:title>
+      <image:caption>Everyone pretending they're not already thinking about dinner</image:caption>
+    </image:image>
+  </url>
+</urlset>
